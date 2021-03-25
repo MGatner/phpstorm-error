@@ -1,0 +1,39 @@
+{
+	"name": "mgatner/phpstorm-error",
+	"description": "Demonstrates bugs in PHPStorm",
+	"keywords": [
+		"mgatner",
+		"phpstorm"
+	],
+	"homepage": "https://github.com/mgatner/phpstorm-error",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Matthew Gatner",
+			"email": "mgatner@tattersoftware.com",
+			"homepage": "https://tattersoftware.com",
+			"role": "Developer"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"php" : "^7.3 || ^8.0"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^0.12"
+	},
+	"autoload": {
+		"psr-4": {
+			"MGatner\\PHPStorm\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\Support\\": "tests/_support"
+		}
+	},
+	"scripts": {
+		"analyze": "phpstan analyze"
+	}
+}
